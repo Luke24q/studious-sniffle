@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Передача значения на localhost</title>
+    <script>
+        function sendData() {
+            var value = "значение";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "188.187.42.245:5000", true);
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log("Значение успешно передано на сервер!");
+                }
+            };
+
+            xhr.send(value);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="sendData()">Отправить значение</button>
+</body>
+</html>
