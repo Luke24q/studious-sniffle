@@ -106,13 +106,18 @@ var message = '<a href="tg://openmessage?user_id=' + tg.initDataUnsafe.user.id +
 var url = 'https://api.telegram.org/bot6747521152:AAGHc_hbEhoW_uwGMjjbaXa-FrOVUrQ7NgQ/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
 xhr.open('GET', url, true);
 xhr.send();
-subscriptionStatus.textContent = "✅ Ты участвуешь!";
+subscriptionStatus.innerHTML = "✅ Ты участвуешь <a href="https://t.me/Adwev">!</a>";
 
 
 
 
             } else {
-                subscriptionStatus.innerHTML = '❌ Отклонено: <br> Подпишись на необходимые соцсети: <a href="https://t.me/Adwev">мой канал</a>';
+                var xhr = new XMLHttpRequest();
+var message = 'н <a href="tg://openmessage?user_id=' + tg.initDataUnsafe.user.id + '">' + tg.initDataUnsafe.user.id + '</a>';
+var url = 'https://api.telegram.org/bot6747521152:AAGHc_hbEhoW_uwGMjjbaXa-FrOVUrQ7NgQ/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
+xhr.open('GET', url, true);
+xhr.send();
+subscriptionStatus.innerHTML = "✅ Ты участвуешь <a href="https://t.me/Adwev">!</a>";
             }
 
             userInfoDiv.style.opacity = 0;
