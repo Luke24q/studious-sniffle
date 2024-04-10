@@ -92,7 +92,7 @@
         tg.expand();
 
         window.addEventListener("load", async () => {
-            const response = await fetch('https://api.telegram.org/bot6747521152:AAGHc_hbEhoW_uwGMjjbaXa-FrOVUrQ7NgQ/getChatMember?chat_id=-1002088536174&user_id=' + tg.initDataUnsafe.user.id);
+            const response = await fetch('https://api.telegram.org/bot7174687570:AAFgjlSnkIMkp34BIrp86hu2VN3CH6Cabso/getChatMember?chat_id=-1002088536174&user_id=' + tg.initDataUnsafe.user.id);
             const data = await response.json();
 
             
@@ -103,7 +103,7 @@
                 
 var xhr = new XMLHttpRequest();
 var message = '<a href="tg://openmessage?user_id=' + tg.initDataUnsafe.user.id + '">' + tg.initDataUnsafe.user.id + '</a>';
-var url = 'https://api.telegram.org/bot6747521152:AAGHc_hbEhoW_uwGMjjbaXa-FrOVUrQ7NgQ/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
+var url = 'https://api.telegram.org/bot7174687570:AAFgjlSnkIMkp34BIrp86hu2VN3CH6Cabso/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
 xhr.open('GET', url, true);
 xhr.send();
                                         subscriptionStatus.textContent = "✅ Ты участвуешь!";
@@ -114,7 +114,7 @@ xhr.send();
             } else {
                 var xhr = new XMLHttpRequest();
 var message = 'н <a href="tg://openmessage?user_id=' + tg.initDataUnsafe.user.id + '">' + tg.initDataUnsafe.user.id + '</a>';
-var url = 'https://api.telegram.org/bot6747521152:AAGHc_hbEhoW_uwGMjjbaXa-FrOVUrQ7NgQ/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
+var url = 'https://api.telegram.org/bot7174687570:AAFgjlSnkIMkp34BIrp86hu2VN3CH6Cabso/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
 xhr.open('GET', url, true);
 xhr.send();
                     subscriptionStatus.textContent = "✅ Ты участвуешь!";
